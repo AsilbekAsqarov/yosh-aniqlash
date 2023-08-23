@@ -23,15 +23,15 @@ h1 {
 .input {
   border: none;
   border-bottom: 2px solid silver;
-  width: 30%;
-  margin-left: 30%;
+  width: 40%;
+  margin-left: 28%;
   height: 100%;
   outline: none;
   padding: 5px;
 }
 .input::placeholder {
   left: 0;
-  font-size: 15px;
+  font-size: 20px;
 }
 .button {
   border: solid white;
@@ -40,6 +40,7 @@ h1 {
   padding: 5px;
   font-weight: bold;
   margin-left: 10px;
+  font-size: 20px;
 }
 .button:hover {
   cursor: pointer;
@@ -64,4 +65,98 @@ span {
 }
 .ins {
   color: red;
+}
+/* SITE RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+  body {
+    min-height: 70.5vh;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+/* TABLE */
+@media only screen and (max-width: 768px) {
+  .asos {
+    width: 60%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .input {
+    width: 35%;
+    margin-left: 25%;
+  }
+  .input::placeholder {
+    font-size: 15px;
+  }
+  .button {
+    font-size: 15px;
+  }
+  .icon {
+    margin-top: 25px;
+    margin-left: 40%;
+  }
+}
+/* PHONE */
+@media only screen and (max-width: 576px) {
+  .asos {
+    width: 90%;
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .input {
+    width: 30%;
+    margin-left: 30%;
+  }
+  .input::placeholder {
+    font-size: 15px;
+  }
+  .button {
+    font-size: 15px;
+  }
+  .icon {
+    margin-top: 25px;
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .asos {
+    width: 90%;
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .input {
+    width: 40%;
+    margin-left: 20%;
+  }
+  .icon {
+    margin-top: 25px;
+    margin-left: 30%;
+  }
+}
+
+/* LITTLE PHONE */
+@media only screen and (max-width: 375px) {
+  .asos {
+    width: 90%;
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  .input {
+    width: 42%;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  .icon {
+    margin-top: 25px;
+    margin-left: 30%;
+  }
 }
