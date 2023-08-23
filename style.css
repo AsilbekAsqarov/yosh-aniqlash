@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.2)),
+    url(https://t4.ftcdn.net/jpg/05/24/62/93/360_F_524629361_AzQaPul017wJZqvKYcxZTQk6HmqZSP49.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 68.5vh;
+}
+.asos {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 15%;
+  padding-bottom: 50px;
+}
+h1 {
+  text-align: center;
+  color: blue;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid silver;
+  width: 30%;
+  margin-left: 30%;
+  height: 100%;
+  outline: none;
+  padding: 5px;
+}
+.input::placeholder {
+  left: 0;
+  font-size: 15px;
+}
+.button {
+  border: solid white;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+span {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 15%;
+  color: green;
+}
+.by {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.icon {
+  margin-top: 25px;
+  margin-left: 43%;
+}
+.ins {
+  color: red;
+}
