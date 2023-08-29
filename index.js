@@ -6,7 +6,8 @@ const yil = now.getFullYear();
 let test = yil - 1996;
 input.placeholder = `${test} yoki 1996 yozing !`;
 
-input.addEventListener("input", () => {
+input.addEventListener("input", (e) => {
+  e.preventDefault
   let korsat = input.value;
   let natija = yil - Number(korsat);
   if (korsat == 0) {
