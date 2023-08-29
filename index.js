@@ -1,13 +1,12 @@
 const input = document.getElementById("input");
 const txt = document.getElementById("txt");
-const button = document.querySelector("button");
 
 const now = new Date();
 const yil = now.getFullYear();
 let test = yil - 1996;
 input.placeholder = `${test} yoki 1996 yozing !`;
 
-const baza = () => {
+input.addEventListener("input", () => {
   let korsat = input.value;
   let natija = yil - Number(korsat);
   if (korsat == 0) {
@@ -22,22 +21,5 @@ const baza = () => {
     txt.innerHTML = `<b>Sizning yoshingiz</b> ${natija} <b>da</b>`;
   } else {
     txt.innerHTML = `<b>Iltimos tekst yozmang !</b>`;
-  }
-  setTimeout(() => {
-    txt.innerHTML = "";
-    input.value = "";
-  }, 8000);
-};
-button.addEventListener("click", () => {
-  baza();
-});
-document.addEventListener("keydown", (e) => {
-  if (e.which == 13) {
-    baza();
-  }
-});
-document.addEventListener("keydown", (e) => {
-  if (e.which == 8) {
-    txt.innerHTML = "";
   }
 });
